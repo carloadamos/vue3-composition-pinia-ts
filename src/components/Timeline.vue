@@ -48,7 +48,7 @@ function selectPeriod(period: Period) {
         >{{ period }}</a
       >
     </span>
-    <a v-for="post of posts" :key="post" class="panel-block">
+    <a v-for="post of posts" :key="post.id" class="panel-block">
       <a>{{ post.title }} </a>
       <div>{{ post.created.toFormat("d MMM yyyy") }}</div></a
     >
